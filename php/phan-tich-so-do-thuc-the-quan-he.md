@@ -1,0 +1,91 @@
+### Liệt kê các thực thể trong website (Các BẢNG trong DATABASE)
+- Thực thể 1: **DANH MỤC SẢN PHẨM**:
+    - Một số ví dụ:
+        - Danh mục có tên là : *Men’s fashion*
+        - Danh mục có ảnh là: <1 cái ảnh>
+        - Danh mục có số lượng SP : 358 sản phẩm
+        - Danh mục có đường dẫn (slug): <1 đường dẫn để vào trang danh mục tương ứng>
+        - Danh mục có LOẠI DANH MỤC: Danh mục trang chủ, danh mục trang SHOP, danh mục trang QUẢNG CÁO....
+        - Danh mục có DANH MỤC CON: Coats, Jacket....
+    - Các thuộc tính của nó:
+        - Id
+        - TenDanhMuc
+        - AvatarDanhMuc
+        - SoLuongSanPham
+        - Slug
+        - LoaiDanhMuc
+        - ParentId
+- Thực thể 2: **SẢN PHẨM**:
+    - Một số ví dụ:
+        - Sản phẩm có tên là: Buttons tweed blazer
+        - Sản phẩm có ảnh là: <1 cái ảnh>
+        - Sản phẩm có rating (số sao): 5
+        - Sản phẩm có giá tiền: 59 $
+        - Sản phẩm có TAG là: NEW hoặc là SALE hoặc là OUT OF STOCK
+        - Sản phẩm có THƯƠNG HIỆU là: SKMEIMore Men Watches from SKMEI
+        - Sản phẩm có PHẦN MÔ TẢ là: "Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur magni lores eos qui ratione voluptatem sequi nesciunt."
+        - Sản phẩm có DANH SÁCH MÀU là: [đỏ, cam ,vàng]
+        - Sản phẩm có DANH SÁCH SIZE là: [X, M, L, XL]
+        - Sản phẩm có DANH SÁCH KHUYẾN MÃI là: [Freeship, Hoàn tiền nếu không thích]
+        - Sản phẩm có DANH SÁCH ẢNH là [ảnh 1, ảnh 2, ảnh 3, ảnh 4]
+        - Sản phẩm có THÔNG TIN CHI TIẾT là: (lorem ispium)
+        - Sản phẩm có THÔNG SỐ KỸ THUẬT là: (lorem ispium)
+        - Sản phẩm có ĐƯỜNG DẪN (Slug)
+    - Các thuộc tính của nó: 
+        - Id
+        - Ten
+        - Avatar
+        - Rating
+        - GiaTien
+        - Tag
+        - ThuongHieu
+        - MoTa
+        - DanhSachMau
+        - DanhSachSize
+        - DanhSachKhuyenMai
+        - DanhSachAnh
+        - ThongTinChiTiet
+        - ThongSoKyThuat
+        - Slug
+- Thực thể 3: **Slide**
+    - Một số ví dụ:
+        - SLIDE có CODE: slide-giua-trang-chu
+        - SLIDE có dòng tiêu đề 1: The Cloie Collection
+        - SLIDE có dòng tiêu đề 2: The Project Jacket
+        - SLIDE có ảnh: <1 ảnh dummy>
+        - SLIDE có slug: <1 url nào đó>
+        - SLIDE có SỐ THỨ TỰ: 
+    - Các thuộc tính:
+        - Id
+        - Code
+        - TieuDe1
+        - TieuDe2
+        - Anh
+        - SoThuTu
+        - Slug
+- Thực thể 4: **MENU**:
+    - Ví dụ:
+        - MENU có tên: HOME
+        - MENU có MENU CON:
+        - MENU có Slug
+        - MENU có VỊ TRÍ: Navbar hoặc Footer cột 1 hoặc Footer cột 2
+    - Các thuộc tính: 
+        - Id
+        - Ten
+        - Slug
+        - ParentId
+        - ViTri
+- Thực thể 5: **CẤU HÌNH WEBSITE**
+    - Ví dụ:
+        - CẤU HÌNH WEBSITE có CODE: 
+        - CẤU HÌNH WEBSITE có ảnh : logo.png
+        - CẤU HÌNH WEBSITE có Slug : <1 cái url nào đó>
+        - CẤU HÌNH WEBSITE có giá trị: 125-711-81 |1125-668-886
+    - Các thuộc tính:
+        - Id
+        - Code
+        - Anh
+        - Slug
+        - GiaTri
+        
+### Tìm liên kết giữa các thực thể với nhau (Các LIÊN KẾT BẢNG khóa chính - khóa ngoại trong DATABASE)
